@@ -4,7 +4,7 @@
 <!-- membuat komponen title sebagai judul halaman -->
 @section('title', 'Event BPM')
  
-<!-- membuat header dan tombol tambah artikel di atas -->
+<!-- membuat header dan tombol tambah event di atas -->
 @section('header')
     <center>
         <h2>Event Bonapasogit Mengajar</h2>
@@ -13,7 +13,7 @@
     </center>
 @endsection
  
-<!-- membuat komponen main yang berisi form untuk mengisi judul dan isi artikel -->
+<!-- membuat komponen main yang berisi list yang berisi nama dan tanggal event -->
 @section('main')
     @foreach ($event as $event)
     <div class="col-md-4 col-sm-12 mt-4">

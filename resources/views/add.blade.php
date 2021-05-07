@@ -4,7 +4,7 @@
 <!-- membuat komponen title sebagai judul halaman -->
 @section('title', 'Menambah Event')
  
-<!-- membuat komponen main yang berisi form untuk mengisi judul dan isi artikel -->
+<!-- membuat komponen main yang berisi form untuk mengisi nama, tanggal, speaker, dan deskripsi event -->
 @section('main')
 <div class="col-md-8 col-sm-12 bg-white p-4">
     <form method="post" action="/add_process">
@@ -28,7 +28,7 @@
 </div>
 @endsection
  
-<!-- membuat komponen sidebar yang berisi tombol untuk upload artikel -->
+<!-- membuat komponen sidebar (side di sebelah kanan) yang berisi tombol untuk upload event-->
 @section('sidebar')
 <div class="col-md-3 ml-md-5 col-sm-12 bg-white p-4" style="height:80px !important">
     <div class="form-group">

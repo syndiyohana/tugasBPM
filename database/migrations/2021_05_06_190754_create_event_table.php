@@ -11,10 +11,10 @@ class CreateEventTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
-        Schema::create('event', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('event', function (Blueprint $table) { //membuat table event pada database yang berisi id nama tanggal speaker dan deskripsi
+            $table->bigIncrements('id'); 
             $table->string('nama');
             $table->date('tanggal');
             $table->string('speaker');

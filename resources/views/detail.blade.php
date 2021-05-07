@@ -1,11 +1,11 @@
 @extends('master')
  
-<!-- memberikan judul di tab sesuai dengan judul artikel yang sedang dibaca -->
+<!-- memberikan judul di tab sesuai dengan nama event yang sedang dibaca -->
 @section('title')
 {{ $event->nama }}
 @endsection
  
-<!-- menampilkan gambar, judul, dan isi artikel -->
+<!-- menampilkan detail nama, tanggal, speaker, dan deskripsi event -->
 @section('main')
 <div class="col-md-7 col-sm-12 mb-5 bg-white p-0">
     <div class="p-4">

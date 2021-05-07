@@ -15,7 +15,7 @@ class EventController extends Controller
     }
     public function add_process(Request $event)
     {
-        DB::table('event')->insert([
+        DB::table('event')->insert([  //memasukkan data event yang telah disimpan ke database
             'nama'=>$event->nama,
             'tanggal'=>$event->tanggal,
             'speaker'=>$event->speaker,
@@ -30,7 +30,7 @@ class EventController extends Controller
     }
     public function detail($id)
     {
-        $event = DB::table('event')->where('id', $id)->first();
+        $event = DB::table('event')->where('id', $id)->first(); //menampilkan detail dari event
         return view('detail', ['event'=>$event]);
     }
     public function show_by_admin()
@@ -50,7 +50,7 @@ class EventController extends Controller
         $tanggal = $event->tanggal;
         $speaker = $event->speaker;
         $deskripsi = $event->deskripsi;
-        DB::table('event')->where('id', $id)
+        DB::table('event')->where('id', $id) //update data event sesuai dengan yang diubah
                             ->update(['nama' => $nama,'tanggal' => $tanggal,'speaker' => $speaker, 'deskripsi' => $deskripsi]);
         Session::flash('success', 'Event berhasil diedit');
         return redirect()->action('App\Http\Controllers\EventController@show_by_admin');
