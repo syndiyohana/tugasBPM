@@ -1,11 +1,11 @@
 @extends('master')
  
 <!-- membuat judul bernama 'Edit Artikel' pada tab bar -->
-@section('title', 'Edit Artikel')
+@section('title', 'Edit Event')
  
 @section('header')
 <center class="mt-4">
-    <h2>Edit Artikel</h2>
+    <h2>Edit Event</h2>
 </center>
 @endsection
  
